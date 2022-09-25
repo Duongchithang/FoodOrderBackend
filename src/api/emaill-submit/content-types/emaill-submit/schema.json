@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emaill_submits",
+  "info": {
+    "singularName": "emaill-submit",
+    "pluralName": "emaill-submits",
+    "displayName": "EmaillSubmit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    }
+  }
+}

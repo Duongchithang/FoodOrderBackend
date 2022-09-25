@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "big_categories",
+  "info": {
+    "singularName": "big-category",
+    "pluralName": "big-categories",
+    "displayName": "BigCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "Index": {
+      "type": "biginteger"
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "vote": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "big_categories"
+    }
+  }
+}

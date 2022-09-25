@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_companies",
+  "info": {
+    "singularName": "info-company",
+    "pluralName": "info-companies",
+    "displayName": "InfoCompany",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Slogan": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^1.1.2",
+    "@strapi/plugin-documentation": "^4.3.9",
+    "@strapi/plugin-i18n": "4.3.9",
+    "@strapi/plugin-users-permissions": "4.3.9",
+    "@strapi/strapi": "4.3.9",
+    "mysql": "2.18.1",
+    "strapi-plugin-populate-deep": "^0.1.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "6359c2c2-9db2-4c1e-9a35-c14d3e7932a6"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
