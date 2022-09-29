@@ -48,6 +48,12 @@
       "relation": "manyToMany",
       "target": "api::big-category.big-category",
       "inversedBy": "categories"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "categories"
     }
   }
 }
