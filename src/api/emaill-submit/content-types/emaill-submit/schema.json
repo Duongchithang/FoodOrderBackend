@@ -4,7 +4,8 @@
   "info": {
     "singularName": "emaill-submit",
     "pluralName": "emaill-submits",
-    "displayName": "EmaillSubmit"
+    "displayName": "Email Nhận thông tin",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

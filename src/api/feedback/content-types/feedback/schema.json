@@ -4,7 +4,8 @@
   "info": {
     "singularName": "feedback",
     "pluralName": "feedbacks",
-    "displayName": "feedback"
+    "displayName": "Phản hồi",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

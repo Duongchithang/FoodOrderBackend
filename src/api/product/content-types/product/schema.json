@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product"
+    "displayName": "Món ăn",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,24 +27,26 @@
       "default": 1
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "content": {
       "type": "richtext"
@@ -52,7 +55,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "products"
+      "mappedBy": "products"
     }
   }
 }

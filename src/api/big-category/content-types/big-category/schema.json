@@ -4,7 +4,7 @@
   "info": {
     "singularName": "big-category",
     "pluralName": "big-categories",
-    "displayName": "BigCategory",
+    "displayName": "Loại Tiệc",
     "description": ""
   },
   "options": {
@@ -55,6 +55,13 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "big_categories"
+    },
+    "FromTime": {
+      "type": "time",
+      "required": true
+    },
+    "EndTime": {
+      "type": "time"
     }
   }
 }

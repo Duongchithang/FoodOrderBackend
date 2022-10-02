@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category"
+    "displayName": "Menu",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,21 +22,23 @@
       "type": "richtext"
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "index": {
       "type": "integer"
@@ -47,13 +50,22 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::big-category.big-category",
-      "inversedBy": "categories"
+      "mappedBy": "categories"
     },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
       "inversedBy": "categories"
+    },
+    "Note": {
+      "type": "text"
+    },
+    "category_order_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category-order-card.category-order-card",
+      "mappedBy": "category"
     }
   }
 }

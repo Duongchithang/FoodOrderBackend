@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_categories",
+  "info": {
+    "singularName": "type-category",
+    "pluralName": "type-categories",
+    "displayName": "Thể loại menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}
