@@ -66,6 +66,21 @@
       "relation": "oneToMany",
       "target": "api::category-order-card.category-order-card",
       "mappedBy": "category"
+    },
+    "amout": {
+      "type": "integer",
+      "required": true,
+      "default": 30
+    },
+    "FromTime": {
+      "type": "time",
+      "required": true
+    },
+    "EndTime": {
+      "type": "time"
+    },
+    "TypeMenu": {
+      "type": "string"
     }
   }
 }

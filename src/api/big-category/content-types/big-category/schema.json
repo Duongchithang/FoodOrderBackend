@@ -62,6 +62,14 @@
     },
     "EndTime": {
       "type": "time"
+    },
+    "Amount": {
+      "type": "integer",
+      "default": 30,
+      "required": true
+    },
+    "CategoryType": {
+      "type": "string"
     }
   }
 }
