@@ -74,14 +74,22 @@
       "mappedBy": "users_permissions_user"
     },
     "Avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Address": {
+      "type": "text"
+    },
+    "PhoneNumber": {
+      "type": "string",
+      "required": true
     }
   }
 }
