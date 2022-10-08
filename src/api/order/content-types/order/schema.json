@@ -32,6 +32,12 @@
       "relation": "oneToMany",
       "target": "api::category-order-card.category-order-card",
       "mappedBy": "order"
+    },
+    "state_order": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::state-order.state-order",
+      "inversedBy": "orders"
     }
   }
 }
