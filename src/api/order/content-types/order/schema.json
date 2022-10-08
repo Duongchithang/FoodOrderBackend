@@ -33,10 +33,10 @@
       "target": "api::category-order-card.category-order-card",
       "mappedBy": "order"
     },
-    "state_order": {
+    "status": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::state-order.state-order",
+      "target": "api::status.status",
       "inversedBy": "orders"
     }
   }
