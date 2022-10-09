@@ -2758,7 +2758,7 @@
   dependencies:
     "follow-redirects" "^1.14.8"
 
-"axios@0.27.2":
+"axios@^0.27.2", "axios@0.27.2":
   "integrity" "sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ=="
   "resolved" "https://registry.npmjs.org/axios/-/axios-0.27.2.tgz"
   "version" "0.27.2"
@@ -2892,7 +2892,7 @@
   "resolved" "https://registry.npmjs.org/big.js/-/big.js-5.2.2.tgz"
   "version" "5.2.2"
 
-"bignumber.js@9.0.0":
+"bignumber.js@^9.0.0", "bignumber.js@9.0.0":
   "integrity" "sha512-t/OYhhJ2SD+YGBQcjY8GzzDHEk9f3nerxjtfa6tlMXfe7frs/WozhvCNoGvpM0P3bNf3Gq5ZRMlGr5f3r4/N8A=="
   "resolved" "https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.0.0.tgz"
   "version" "9.0.0"
@@ -4484,6 +4484,11 @@
   "resolved" "https://registry.npmjs.org/es6-object-assign/-/es6-object-assign-1.1.0.tgz"
   "version" "1.1.0"
 
+"esbuild-darwin-64@0.15.10":
+  "integrity" "sha512-hbDJugTicqIm+WKZgp208d7FcXcaK8j2c0l+fqSJ3d2AzQAfjEYDRM3Z2oMeqSJ9uFxyj/muSACLdix7oTstRA=="
+  "resolved" "https://registry.npmjs.org/esbuild-darwin-64/-/esbuild-darwin-64-0.15.10.tgz"
+  "version" "0.15.10"
+
 "esbuild-loader@^2.19.0":
   "integrity" "sha512-dr+j8O4w5RvqZ7I4PPB4EIyVTd679EBQnMm+JBB7av+vu05Zpje2IpK5N3ld1VWa+WxrInIbNFAg093+E1aRsA=="
   "resolved" "https://registry.npmjs.org/esbuild-loader/-/esbuild-loader-2.20.0.tgz"
@@ -4495,11 +4500,6 @@
     "loader-utils" "^2.0.0"
     "tapable" "^2.2.0"
     "webpack-sources" "^2.2.0"
-
-"esbuild-windows-64@0.15.10":
-  "integrity" "sha512-2H0gdsyHi5x+8lbng3hLbxDWR7mKHWh5BXZGKVG830KUmXOOWFE2YKJ4tHRkejRduOGDrBvHBriYsGtmTv3ntA=="
-  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.15.10.tgz"
-  "version" "0.15.10"
 
 "esbuild@^0.15.6":
   "integrity" "sha512-N7wBhfJ/E5fzn/SpNgX+oW2RLRjwaL8Y0ezqNqhjD6w0H2p0rDuEz2FKZqpqLnO8DCaWumKe8dsC/ljvVSSxng=="
@@ -5074,6 +5074,11 @@
   "integrity" "sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw=="
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
+
+"fsevents@~2.3.2":
+  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  "version" "2.3.2"
 
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
@@ -6271,6 +6276,13 @@
   "resolved" "https://registry.npmjs.org/jsesc/-/jsesc-0.5.0.tgz"
   "version" "0.5.0"
 
+"json-bigint@^1.0.0":
+  "integrity" "sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ=="
+  "resolved" "https://registry.npmjs.org/json-bigint/-/json-bigint-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "bignumber.js" "^9.0.0"
+
 "json-buffer@3.0.1":
   "integrity" "sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ=="
   "resolved" "https://registry.npmjs.org/json-buffer/-/json-buffer-3.0.1.tgz"
@@ -7274,6 +7286,15 @@
   "integrity" "sha512-QNABxbrPa3qEIfrE6GOJ7BYIuignnJw7iQ2YPbc3Nla1HzRJjXzZOiikfF8m7eAMfichLt3M4VgLOetqgDmgGQ=="
   "resolved" "https://registry.npmjs.org/node-machine-id/-/node-machine-id-1.1.12.tgz"
   "version" "1.1.12"
+
+"node-mailjet@^5.1.1":
+  "integrity" "sha512-/KN1gDn/NcHU6wOwzwbuBbqIpexdjuZLjgLhUWJSSQgGRdRjcL16FF3ldbJRzljtMPiu6IJUNmXFGt7Nu+gEOg=="
+  "resolved" "https://registry.npmjs.org/node-mailjet/-/node-mailjet-5.1.1.tgz"
+  "version" "5.1.1"
+  dependencies:
+    "axios" "^0.27.2"
+    "json-bigint" "^1.0.0"
+    "url-join" "^4.0.0"
 
 "node-plop@^0.26.3", "node-plop@0.26.3":
   "integrity" "sha512-Cov028YhBZ5aB7MdMWJEmwyBig43aGL5WT4vdoB28Oitau1zZAcHUn8Sgfk9HM33TqhtLJ9PlM/O0Mv+QpV/4Q=="
@@ -9955,7 +9976,7 @@
   "resolved" "https://registry.npmjs.org/urix/-/urix-0.1.0.tgz"
   "version" "0.1.0"
 
-"url-join@4.0.1":
+"url-join@^4.0.0", "url-join@4.0.1":
   "integrity" "sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA=="
   "resolved" "https://registry.npmjs.org/url-join/-/url-join-4.0.1.tgz"
   "version" "4.0.1"

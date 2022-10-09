@@ -4,8 +4,7 @@
   "info": {
     "singularName": "status",
     "pluralName": "statuses",
-    "displayName": "Status",
-    "description": ""
+    "displayName": "Status"
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +12,9 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
+      "type": "string"
+    },
+    "description": {
       "type": "string"
     },
     "orders": {
