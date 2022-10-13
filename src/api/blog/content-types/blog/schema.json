@@ -33,6 +33,11 @@
         "videos",
         "audios"
       ]
+    },
+    "index": {
+      "type": "biginteger",
+      "required": true,
+      "default": "0"
     }
   }
 }
