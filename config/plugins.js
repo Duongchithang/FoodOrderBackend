@@ -8,26 +8,21 @@ module.exports = ({ env }) => ({
   // ...
   email: {
     config: {
-      provider: "sendgrid",
+      provider: "nodemailer",
       providerOptions: {
-        apiKey: env("SENDGRID_API_KEY"),
+        host: env("SMTP_HOST", "smtp.gmail.com"),
+        port: env("SMTP_PORT", 587),
+        auth: {
+          user: env("SMTP_USERNAME"),
+          pass: env("SMTP_PASSWORD"),
+        },
+        // ... any custom nodemailer options
       },
       settings: {
-        defaultFrom: "tungle3001.itfreelancer@gmail.com",
-        defaultReplyTo: "tungle3001.itfreelancer@gmail.com",
+        defaultFrom: "hello@eztiec.com",
+        defaultReplyTo: "hello@eztiec.com",
       },
     },
   },
-
-  name: "strapi::body",
-  config: {
-    formLimit: "256mb", // modify form body
-    jsonLimit: "256mb", // modify JSON body
-    textLimit: "256mb", // modify text body
-    formidable: {
-      maxFileSize: 250 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
-    },
-  },
-
   // ...
 });

@@ -14,11 +14,15 @@
     "@strapi/plugin-documentation": "^4.3.9",
     "@strapi/plugin-i18n": "4.4.0",
     "@strapi/plugin-users-permissions": "4.3.9",
-    "@strapi/provider-email-sendgrid": "^4.4.1",
+    "@strapi/provider-email-nodemailer": "^4.4.3",
+    "@strapi/provider-email-sendgrid": "^4.4.3",
     "@strapi/strapi": "4.4.0",
     "mysql": "2.18.1",
     "node-mailjet": "^5.1.1",
-    "strapi-plugin-populate-deep": "^0.1.2"
+    "strapi-plugin-graphs-builder": "^1.0.0",
+    "strapi-plugin-populate-deep": "^0.1.2",
+    "strapi-provider-email-sendgrid": "^3.6.10",
+    "strapi-provider-email-sendmail": "^3.6.10"
   },
   "author": {
     "name": "ThanhTung"
