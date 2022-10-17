@@ -90,6 +90,18 @@
     "PhoneNumber": {
       "type": "string",
       "required": false
+    },
+    "Company": {
+      "type": "string"
+    },
+    "BirthDate": {
+      "type": "date"
+    },
+    "CompanyRole": {
+      "type": "string"
+    },
+    "EmployeeCount": {
+      "type": "biginteger"
     }
   }
 }
