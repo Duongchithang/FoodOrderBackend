@@ -38,6 +38,10 @@
       "type": "biginteger",
       "required": true,
       "default": "0"
+    },
+    "Display": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

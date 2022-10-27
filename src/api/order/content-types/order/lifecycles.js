@@ -23,12 +23,12 @@ module.exports = {
           text +
           `
               <tr>
-              <td>${index + 1}</td>
+          
               <td>${e.Name}</td>
               <td>${parseInt(e.Amount).toLocaleString("it-IT", {
-                style: "currency",
-                currency: "VND",
-              })}</td>
+            style: "currency",
+            currency: "VND",
+          })}</td>
               </tr>
               `;
       });
@@ -246,7 +246,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
         <table class="table">
                     <thead>
                         <tr>
-                            <th >STT</th>
+                         
                             <th >Tên Menu</th>
                           
                             <th  >Đơn giá</th>
@@ -261,12 +261,12 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                 <div class="row justify-content-end">
                     <div class="col-2">
                         <h5>Tổng cộng:${parseInt(total).toLocaleString(
-                          "it-IT",
-                          {
-                            style: "currency",
-                            currency: "VND",
-                          }
-                        )}</h5>
+    "it-IT",
+    {
+      style: "currency",
+      currency: "VND",
+    }
+  )}</h5>
                     </div>
                     <div class="col-3">
                        
