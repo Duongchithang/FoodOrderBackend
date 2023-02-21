@@ -2,11 +2,11 @@ module.exports = ({ env }) => ({
   connection: {
     client: "mysql",
     connection: {
-      host: env("DATABASE_HOST", "103.138.88.35"),
+      host: env("DATABASE_HOST", "localhost"),
       port: env.int("DATABASE_PORT", 3306),
-      database: env("DATABASE_NAME", "ezt15163_order_food"),
-      user: env("DATABASE_USERNAME", "ezt15163_root"),
-      password: env("DATABASE_PASSWORD", "VyBgUP[]D%7;"),
+      database: env("DATABASE_NAME", "foodorder"),
+      user: env("DATABASE_USERNAME", "root"),
+      password: env("DATABASE_PASSWORD", "chithang123"),
       ssl: env.bool("DATABASE_SSL", false),
     },
   },
