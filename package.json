@@ -16,6 +16,7 @@
     "@strapi/plugin-users-permissions": "4.3.9",
     "@strapi/provider-email-nodemailer": "^4.4.3",
     "@strapi/provider-email-sendgrid": "^4.4.3",
+    "@strapi/provider-upload-cloudinary": "^4.6.1",
     "@strapi/strapi": "4.4.0",
     "mysql": "2.18.1",
     "node-mailjet": "^5.1.1",

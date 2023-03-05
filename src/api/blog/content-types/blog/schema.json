@@ -20,9 +20,6 @@
       "type": "text",
       "required": true
     },
-    "Content": {
-      "type": "richtext"
-    },
     "Media": {
       "type": "media",
       "multiple": false,
@@ -42,6 +39,9 @@
     "Display": {
       "type": "boolean",
       "default": false
+    },
+    "Content": {
+      "type": "text"
     }
   }
 }
